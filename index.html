@@ -1,155 +1,92 @@
-<!doctype html>
-<html>
-	<head>
-	<meta charset= "utf-8"/>
-	<link href="atributos.css" rel="stylesheet" /> 
-	<title>Entrega Final Fase 2</title>
-  
-</head>
-  
-
-<body>
-   
-
-   <script src="http://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
-    <script src="animo.js" type="text/javascript"></script>
-    <link href="animate+animo.css" rel="stylesheet" type="text/css">
-
-    <div id="demo1" style="height:100px;width:100px;background:#34495e"></div>
-    <p><li class="button chunky" onclick="$('#demo1').animo({animation:'tada'});">Tada!</li></p>
-
-
-</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="jquery-circle-progress/dist/circle-progress.js"></script>
-
-<div id="circle"></div>
-
-<script>
-    $('#circle').circleProgress({
-        value: 0.75,
-        size: 80,
-        fill: {
-            gradient: ["red", "orange"]
-        }
-    });
-
-    
-</script>
-
-	<h1> ¡Hombres vs Mujeres en la donación de órganos!</h1>
-	<h5><p>La donación de órganos es un tema muy contigente en nuestro país, y como tal </p>
-		<p>debemos tomar conciencia de la situación qe se vive hoy en día. Por esto, para </p>
-		<p>esta entrega decidimos mostrar cómo se distribuye la donación según género y </p>
-		<p>sistema de salud.
-		Hola</p>
-		<img src= "rinon.png" alt="logo rinon">
-		<img src="logo-uc.png" height="100">
-	</body>
 <!DOCTYPE html>
-<meta charset="utf-8">
-<body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<script>
+<html>
+    <head>
+        <title>Manuel Aylwin</title>
+        <meta name="viewport" content="whit=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <style type="text/css">
+        div.box{
+            text-align: center;
+        }
+        
+    </style>
+    <style>
+        div.body{
+            background-image: url(Redes.jpg); 
+        }
+    </style>
+    </head>
+    <header>
+    </header>
+    <body bgcolor="#000000">
+        <div class="jumbotron">
+            <div class="box">
+            <h1><img src="logo-uc.png" height="100"><b>ING1015 - Pensamiento Visual</b><img src="DILAB.png" height="100"></h1>
+            </div>
+            <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Cambiar Navegacion</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h href="#" class="navbar-brand" <b><span class="glyphicon glyphicon-eye-open"></span>ING1015</b></h>
+            </div>
 
-var width = 960,
-    height = 500,
-    outerRadius = Math.min(width, height) * .5 - 10,
-    innerRadius = outerRadius * .6;
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://catalogo.uc.cl/index.php?tmpl=component&option=com_catalogo&view=requisitos&sigla=ING1015"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Requisitos</a></li>
+                    <li><a href="Programa ING1015.pdf"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Programa</a></li>
+                    <li ><a href="http://www.ing.puc.cl/alumnos/plan-de-estudios/majors-interdisciplinarios/major-en-ingenieria-diseno-e-innovacion/"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>MAJOR<b>IDI</b></a></li>
+                    <li><a href="http://www.di-lab.cl/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><b>DI</b>LAB</a></li>
+                    
+                    
+                    </li>
+                </ul>
 
-var n = 10,
-    data0 = d3.range(n).map(Math.random),
-    data1 = d3.range(n).map(Math.random),
-    data;
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Buscar</button>
+                </form>
 
-var color = d3.scale.category20();
+        </nav>
+        <div class="body">
+        <div class="container">
+            <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                <h3 class="panel-title"><p  class="text-info" align="center">Este curso permite a los estudiantes obtener una vision general del Major en Ingenieria, Diseno e Innovacion y las areas del conocimiento que estudia.</h3>
+                </div>
+                <div class="panel-body">
+                <p  class="text-info">
+                    <img class="#ddd" src="Big-Data.jpg" height="200" align="left">
+                        El Pensamiento Visual ha ganado gran relevancia dada su eficacia en el manejo, exploracion y procesamiento de grandes sets de datos <a href="https://es.wikipedia.org/wiki/Big_data">(Big Data)</a>, asi como en dar visibilidad a elementos intangibles como emociones y comportamientos. Los medios visuales por su parte, permiten la manifestacion visual de modelos y experimentos ideados por un ingeniero, favoreciendo la negociacion de ideas entre grupos de diversas areas disciplinarias. A pesar de la importancia que se le ha dado disciplinariamente al razonamiento matematico/linguistico, hoy, la introduccion de nuevas tecnologias y las redes sociales, han hecho que el alfabetismo visual aumente. En este contexto, el pensamiento visual se ha transformado en una herramienta critica para la creacion y propagacion del conocimiento de manera transversal desde la ingenieria para todas las disciplinas. Por medio de este curso se podran abordar las teorias e ideas que sustentan el pensamiento visual para la Ingenieria y las Ciencias, asi como las metodologias e implementacion practica de los conocimientos adquiridos.
+                
+        
+        <div class="box">
+                <img class="#ddd" src="pensamiento-visual.jpg" height="500">
+        </div>
+        </div>
+        
+        <div class="panel panel-primary"><h3  class="text-info"><u>Este curso esta sub-dividido en 3 fases:</u></h3>
+        <p  class="text-info"><b>Fase 1:</b> Individual - Recoleccion de Datos</p>
+        <p  class="text-info"><b>Fase 2:</b> Grupal - Modelamiento 2D</p>
+        <p  class="text-info"><b>Fase 3:</b> Grupal - Modelamiento 3D</p>
 
-var arc = d3.svg.arc();
-
-var pie = d3.layout.pie()
-    .sort(null);
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-svg.selectAll(".arc")
-    .data(arcs(data0, data1))
-  .enter().append("g")
-    .attr("class", "arc")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-  .append("path")
-    .attr("fill", function(d, i) { return color(i); })
-    .attr("d", arc);
-
-transition(1);
-
-function arcs(data0, data1) {
-  var arcs0 = pie(data0),
-      arcs1 = pie(data1),
-      i = -1,
-      arc;
-  while (++i < n) {
-    arc = arcs0[i];
-    arc.innerRadius = innerRadius;
-    arc.outerRadius = outerRadius;
-    arc.next = arcs1[i];
-  }
-  return arcs0;
-}
-
-function transition(state) {
-  var path = d3.selectAll(".arc > path")
-      .data(state ? arcs(data0, data1) : arcs(data1, data0));
-
-  // Wedges split into two rings.
-  var t0 = path.transition()
-      .duration(1000)
-      .attrTween("d", tweenArc(function(d, i) {
-        return {
-          innerRadius: i & 1 ? innerRadius : (innerRadius + outerRadius) / 2,
-          outerRadius: i & 1 ? (innerRadius + outerRadius) / 2 : outerRadius
-        };
-      }));
-
-  // Wedges translate to be centered on their final position.
-  var t1 = t0.transition()
-      .attrTween("d", tweenArc(function(d, i) {
-        var a0 = d.next.startAngle + d.next.endAngle,
-            a1 = d.startAngle - d.endAngle;
-        return {
-          startAngle: (a0 + a1) / 2,
-          endAngle: (a0 - a1) / 2
-        };
-      }));
-
-  // Wedges then update their values, changing size.
-  var t2 = t1.transition()
-        .attrTween("d", tweenArc(function(d, i) {
-          return {
-            startAngle: d.next.startAngle,
-            endAngle: d.next.endAngle
-          };
-        }));
-
-  // Wedges reunite into a single ring.
-  var t3 = t2.transition()
-      .attrTween("d", tweenArc(function(d, i) {
-        return {
-          innerRadius: innerRadius,
-          outerRadius: outerRadius
-        };
-      }));
-
-  setTimeout(function() { transition(!state); }, 5000);
-}
-
-function tweenArc(b) {
-  return function(a, i) {
-    var d = b.call(this, a, i), i = d3.interpolate(a, d);
-    for (var k in d) a[k] = d[k]; // update data
-    return function(t) { return arc(i(t)); };
-  };
-}
+        <h3 class="text-info"><u>Al final del curso se espera que el alumno pueda:</u></h3>
+        <p  class="text-info"><b>Seleccionar, aplicar y adaptar</b> metodos y tecnologias de visualizacion de datos abordados en clases.</p>
+        <p  class="text-info"><b>Idear, planifica, programar y construir</b> disenos creativos que desplieguen contenido vidual.</p>
+        <p  class="text-info"><b>Discutir y opinar</b> acerca de las teorias, metodos y herramientas que sustentan el razonamiento detras de la visualizacion.</p></div>
+         
+        </div>
+        </div>
+        </div>
+        </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
 
 </html>
