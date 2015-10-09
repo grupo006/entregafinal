@@ -1,0 +1,91 @@
+@import url('http://fonts.googleapis.com/css?family=Gabriela');
+
+
+html { overflow-y: scroll; }
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 62.5%;
+
+}
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; height: auto; width: 100%; }
+
+
+
+/** page structure **/
+.wrap {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#intro {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#intro p {
+  font-size: 1.8em;
+  line-height: 1.35em;
+  color: #616161;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+#stats {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  background: #f8f8f8;
+  border-top: 4px solid #c3c3c3;
+  border-bottom: 4px solid #c3c3c3;
+}
+
+#stats .row {
+  display: block;
+}
+
+.circle-container {
+  display: block;
+  float: left;
+  margin-right: 55px;
+  margin-bottom: 45px;
+}
+
+.circle-container h3 {
+  display: block;
+  text-align: center;
+  font-size: 2.25em;
+  line-height: 1.4em;
+  color: #000000;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
