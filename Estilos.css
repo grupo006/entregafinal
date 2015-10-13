@@ -6,22 +6,22 @@ header {
 .color0 {
 	background:#87FF42;
   margin: auto;
-  height: 160px;
+  margin-bottom: 10px;
 
 }
 .color1 {
   padding: 1px;
-  background: #43FF2B;
+  background: #217F16;
   color:#fff;
 }
 .color2{
 background: #87FF78;
-height: 340px;
+height: 480px;
 }
 .color3 {
   background:#87FF42;
   margin: auto;
-  height: 1240px;
+  margin-bottom: 20px;
 }
 .color4 {
 background: #1EFF5B;
@@ -32,14 +32,17 @@ color:#fff;
 
 
 #margen0{
-  margin-left: 6%;
+  margin-left: 5%;
 }
 #margen1{
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 2%;
 }
-
+#margen2{
+  margin-left: 4%;
+  margin-top: 0%;
+}
 .btn-toggle {
   	height: 50px;
   	line-height: 50px;
