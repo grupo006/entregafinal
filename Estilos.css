@@ -1,0 +1,132 @@
+header {
+	background:#217F16;
+	color:#fff;
+}
+
+.color0 {
+	background:#87FF42;
+  margin: auto;
+  height: 160px;
+
+}
+.color1 {
+  padding: 1px;
+  background: #43FF2B;
+  color:#fff;
+}
+.color2{
+background: #87FF78;
+height: 340px;
+}
+.color3 {
+  background:#87FF42;
+  margin: auto;
+  height: 1240px;
+}
+.color4 {
+background: #1EFF5B;
+height: 180px;
+color:#fff;
+}
+
+
+
+#margen0{
+  margin-left: 6%;
+}
+#margen1{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 2%;
+}
+
+.btn-toggle {
+  	height: 50px;
+  	line-height: 50px;
+  	font-size: 24px;
+  	font-weight: bold;
+  	color: #000;
+  	display: block;
+  	background: #FFDC00;
+  	text-align: center; }
+
+.btn-toggle:hover {
+    text-decoration: none; }
+
+aside {
+	background:#c0392b;
+	color:#fff;
+
+}
+
+footer {
+	background:#16a085;
+	color:#fff;
+}
+
+
+.item {
+    position: relative;
+    float: left;
+}
+
+.item h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+}
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation0 {
+  stroke-dasharray: 655; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 655;
+}
+.circle_animation1 {
+  stroke-dasharray: 680; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 680;
+}
+.circle_animation2 {
+  stroke-dasharray: 550; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 550;
+}
+.circle_animation3 {
+  stroke-dasharray: 400; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 400;
+}
+
+
+.html .circle_animation0 {
+    -webkit-animation: html 2s ease-out forwards;
+    animation: html 2s ease-out forwards;
+}
+.html .circle_animation1 {
+    -webkit-animation: html 2s ease-out forwards;
+    animation: html 2s ease-out forwards;
+}
+.html .circle_animation2 {
+    -webkit-animation: html 2s ease-out forwards;
+    animation: html 2s ease-out forwards;
+}
+.html .circle_animation3 {
+    -webkit-animation: html 2s ease-out forwards;
+    animation: html 2s ease-out forwards;
+}
+
+
+
+@-webkit-keyframes html {
+  to {
+    stroke-dashoffset: 220; /* 50% would be 220 (half the initial value specified above) */
+  }
+}
+
+@keyframes html {
+  to {
+    stroke-dashoffset: 220;
+  }
+}
