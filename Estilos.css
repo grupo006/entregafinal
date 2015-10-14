@@ -1,30 +1,30 @@
 header {
-	background:#217F16;
+	background:#FFFFFF;
 	color:#fff;
 }
 
 .color0 {
-	background:#87FF42;
+	background:#FFFFFF;
   margin: auto;
   margin-bottom: 10px;
 
 }
 .color1 {
   padding: 1px;
-  background: #217F16;
-  color:#fff;
+  background: #FF2E2E;
+  color:#FFFFFF;
 }
 .color2{
-background: #87FF78;
-height: 480px;
+background: #E5E5E5;
+height: 1580px;
 }
 .color3 {
-  background:#87FF42;
+  background:#D1D1D1;
   margin: auto;
   margin-bottom: 20px;
 }
 .color4 {
-background: #1EFF5B;
+background: #D1D1D1;
 height: 180px;
 color:#fff;
 }
