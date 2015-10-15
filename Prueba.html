@@ -96,7 +96,37 @@
                   </svg>
          <p></p>
           </div>
-        <div class="col-md-7"><img src="cuerpo humano.svg" height="1200" /></div>
+        
+
+        <svg width="1460" height="800" id="statesvg"></svg> <!-- svg to hold the map. -->
+
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script>
+
+        function tooltipHtml(n, d){ /* function to create html content string in tooltip div. */
+            return "<h4>"+n+"</h4><table>"+
+                "<tr><td>Porcentaje de suicidios</td><td>"+(d.low)+"</td></tr>"+
+                "<tr><td>Delicuencia</td><td>"+(d.avg)+"</td></tr>"+
+                "<tr><td>Persona habitando</td><td>"+(d.high)+"</td></tr>"+
+                "</table>";
+        }
+    
+        var sampleData ={}; /* Sample random data. */
+
+
+        ["HI","HD","PU","CO","HI","RI"]
+        .forEach(function(d){ 
+            var low=Math.round(100*Math.random()), 
+                mid=Math.round(100*Math.random()), 
+                high=Math.round(100*Math.random());
+            sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
+                    avg:Math.round((low+mid+high)/3), color:d3.interpolate("#00CCFF", "#0009FF")(low/100)}; 
+        });
+
+    
+          /* draw states on id #statesvg */   
+          comunas.draw("#statesvg", sampleData, tooltipHtml);
+        </script></div>
           <h4 class="col-md-4" align="justify" id="margen1">El órgano más donado en el país son los riñones, con 175 riñones donados el año 2013, por sobre el hígado con 69 donaciones. Los menos donados son el corazón y el pulmón con 31. De esta cantidad de órganos donados, el 77% ocurre en la salud pública. Por otro lado, el 70% del país ocupa salud pública, por lo que podemos concluir que en proporción de órganos donados versus cantidad de gente en salud pública y privada, ocurren levemente más donaciones per capita en la salud pública, por lo que el mito de que las donaciones se concentran en la salud privada queda completamente descartado.</h4>
         </center>
         
