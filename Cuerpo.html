@@ -13,27 +13,36 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-    function tooltipHtml(n, d, Pr, Pu){ /* function to create html content string in tooltip div. */
+    function tooltipO(n, d, Pr, Pub){ /* function to create html content string in tooltip div. */
         return "<h4>"+n+"</h4><table>"+
-            "<tr><td>Donaciones en Sistema Público</td><td>"+Pr+"</td></tr>"+
-            "<tr><td>Donaciones en Sistema Privado</td><td>"+Pu+"</td></tr>"+
+            "<tr><td>Donaciones</td><td> en Sistema Público</td><td>"+Pub+"</td></tr>"+
+            "<tr><td>Donaciones</td><td> en Sistema Privado</td><td>"+Pr+"</td></tr>"+
             "</table>";
     }
+    
+    function tooltipH(n, d, Ap, Do){ /* function to create html content string in tooltip div. */
+        return "<h4>"+n+"</h4><table>"+
+            "<tr><td>Aprobación frente a </td><td>"+Ap+"%"+"</td></tr>"+
+            "<tr><td>Trasplantes </td><td>"+
+            "<tr><td>Donaciones</td><td>"+Do+"%"+"</td></tr>"+
+            "</table>";
+    }
+
     
     var sampleData ={}; /* Sample random data. */
 
     
-    ["HI","HD","PU","CO","HI","RI"]
-        .forEach(function(Pr){ 
-            var low=Math.round(100*Math.random()), 
-                mid=Math.round(100*Math.random()), 
-                high=Math.round(100*Math.random());
-            sampleData[Pr]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
-                    avg:Math.round((low+mid+high)/3), color:d3.interpolate("#00CCFF", "#0009FF")(low/100)}; 
-        });
+    ["PU","CO","HI","RI"]
+        .forEach(function(d){sampleData[d]={color: "FF510D"};});
+    ["HO"]
+        .forEach(function(d){sampleData[d]={color: "6563FF"};});
+    ["MU"]
+    .forEach(function(d){sampleData[d]={color: "F15FFF"};});
+
 
     
     /* draw states on id #statesvg */   
-    comunas.draw("#statesvg", sampleData, tooltipHtml);
+    Hemisferios.draw("#statesvg", sampleData, tooltipH);
+    organos.draw("#statesvg", sampleData, tooltipO);
 </script>
 </body>
