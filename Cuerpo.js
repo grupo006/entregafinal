@@ -23,8 +23,8 @@
       d3.select("#tooltip").transition().duration(100).style("opacity", .9);      
       
       d3.select("#tooltip").html(toolTip(d.n, data[d.id], d.Ap, d.Do))  
-        .style("left", (d3.event.pageX) + "px")
-        .style("top", (d3.event.pageY - 100) + "px");
+        .style("left", (d3.event.pageX -300) + "px")
+        .style("top", (d3.event.pageY -250) + "px");
           }
     
     function mouseOut(){
@@ -147,8 +147,8 @@
       d3.select("#tooltip").transition().duration(100).style("opacity", .9);      
       
       d3.select("#tooltip").html(toolTip(d.n, data[d.id], d.Pr, d.Pub))
-        .style("left", (d3.event.pageX) + "px")
-        .style("top", (d3.event.pageY - 100) + "px");
+        .style("left", (d3.event.pageX - 300) + "px")
+        .style("top", (d3.event.pageY - 250) + "px");
     }
     
     function mouseOut(){

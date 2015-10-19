@@ -11,12 +11,12 @@ header {
 }
 .color1 {
   padding: 1px;
-  background: #FF2E2E;
+  background: #ADE81C;
   color:#FFFFFF;
 }
 .color2{
 background: #E5E5E5;
-height: 1580px;
+height: 800px;
 }
 .color3 {
   background:#D1D1D1;
@@ -25,8 +25,8 @@ height: 1580px;
 }
 .color4 {
 background: #D1D1D1;
-height: 180px;
-color:#fff;
+height: 165px;
+
 }
 
 
@@ -42,6 +42,8 @@ color:#fff;
 #margen2{
   margin-left: 4%;
   margin-top: 0%;
+  padding-top: 5%; 
+  margin-right: 4%;
 }
 .btn-toggle {
   	height: 50px;
@@ -55,12 +57,6 @@ color:#fff;
 
 .btn-toggle:hover {
     text-decoration: none; }
-
-aside {
-	background:#c0392b;
-	color:#fff;
-
-}
 
 footer {
 	background:#16a085;
@@ -80,7 +76,7 @@ footer {
     width: 100%;
 }
 
-svg {
+svg.grafico {
    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
@@ -132,4 +128,90 @@ svg {
   to {
     stroke-dashoffset: 220;
   }
+}
+
+div.spin {
+  width: 0.6em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1em;
+  display: inline-block;
+}
+span {
+  position: relative;
+}
+.animate {
+  -webkit-animation: spinit 0.2s 5;
+  -moz-animation: spinit 0.2s 5;
+  animation: spinit 0.2s 5;
+}
+@-webkit-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+@-moz-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+@keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+
+/* Setting the required value to top will make the spinner end at that number */
+
+#digit0 {
+  top: 1em;
+  /* -4em means 5 will be the number */
+}
+#digit1 {
+  top: 0em;
+  /* -4em means 5 will be the number */
+}
+#digit2 {
+  top: -1em;
+}
+#digit3 {
+  top: -2em;
+}
+#digit4 {
+  top: -3em;
+  /* -4em means 5 will be the number */
+}
+#digit5 {
+  top: -4em;
+}
+#digit6 {
+  top: -5em;
+}
+#digit7 {
+  top: -6em;
+  /* -4em means 5 will be the number */
+}
+#digit8 {
+  top: -7em;
+}
+#digit9 {
+  top: -8em;
 }
