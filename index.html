@@ -10,6 +10,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="Cuerpo.js"></script> <!-- creates uStates. -->
   <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
  
 
 </head>
@@ -144,7 +167,11 @@
 
       <div class="container col-md-5"  id="margen2"> 
       <h4 align="justify">Con respecto a la donación por género, el porcentaje de mujeres a favor de la donación es más grande que el de los hombres, lo cual se contrapone con el hecho que haya más órganos donados por hombres que por mujeres. Esto se puede deber a que los familiares, al morirse el donante, sean menos propensos a donar sus órganos si es mujer que si es hombre. Es por esto que creemos que<b> pese a que las mujeres se muestran más a favor que los hombres en la donación de órganos, finalmente son los hombres quienes realizan la mayoría de las donaciones, y que éstas se hacen principalmente en la salud privada. </b> </h4>
-      <h4 align="justify">El órgano más donado en el país son los riñones, con 175 riñones donados el año 2013, por sobre el hígado con 69 donaciones. Los menos donados son el corazón y el pulmón con 31. De esta cantidad de órganos donados, el 77% ocurre en la salud pública. Por otro lado, el 70% del país ocupa salud pública, por lo que podemos concluir que en proporción de órganos donados versus cantidad de gente en salud pública y privada, ocurren levemente más donaciones per capita en la salud pública, por lo que el mito de que las donaciones se concentran en la salud privada queda completamente descartado.</h4> 
+      <h4 align="justify">El órgano más donado en el país son los riñones, con 175 riñones donados el año 2013, por sobre el hígado con 69 donaciones. Los menos donados son el corazón y el pulmón con 31. De esta cantidad de órganos donados, el 77% ocurre en la salud pública. Por otro lado, el 70% del país ocupa salud pública, por lo que podemos concluir que en proporción de órganos donados versus cantidad de gente en salud pública y privada, ocurren levemente más donaciones per capita en la salud pública, por lo que el mito de que las donaciones se concentran en la salud privada queda completamente descartado.</h4>
+      
+  
+      <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  
       </div>
       </div>
       </div>
